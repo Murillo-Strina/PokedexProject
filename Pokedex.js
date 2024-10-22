@@ -51,10 +51,10 @@ document.getElementById('pokemonName').addEventListener('keydown', function (eve
         event.preventDefault();
         if (currentIndex >= 0 && currentIndex < suggestions.length) {
             document.getElementById('pokemonName').value = suggestions[currentIndex].textContent;
-            document.getElementById('suggestions').innerHTML = '';
-            document.getElementById('suggestions').style.display = 'none';
-            document.getElementById('pokedexForm').dispatchEvent(new Event('submit'));
         }
+        document.getElementById('suggestions').innerHTML = '';
+        document.getElementById('suggestions').style.display = 'none';
+        document.getElementById('pokedexForm').dispatchEvent(new Event('submit'));
     }
 });
 
