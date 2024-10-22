@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="top-section">
+        <div class="semi-circle"></div>
+    </div>
+
+    <form id="pokedexForm" style="position: relative;">
+        <input type="text" id="pokemonName" placeholder="Enter Pokemon Name" autocomplete="off" autocorrect="off" />
+        <button type="submit">Pesquisar</button>
+        <div id="suggestions" class="suggestions-list"></div> 
+    </form>    
+
+    <div id="pokemonDisplay"></div>
+
+    <div class="bottom-section">
+        <div class="semi-circle"></div>
+    </div>
+
+    <script src="Pokedex.js"></script>  
+</body>
+</html>
