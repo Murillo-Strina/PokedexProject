@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #d8f4f8;
+    background-color: #e1f5f8;
     position: relative;
     width: 100vw;
 }
@@ -41,6 +41,7 @@ button {
     color: white;
     border: none;
     border-radius: 4px;
+    border: 1px solid #000;
     cursor: pointer;
 }
 
@@ -55,7 +56,9 @@ button:hover {
 
 #pokemonDisplay img {
     width: 200px;
-    height: auto;
+    height: 200px;
+    margin-top: 15px;
+    margin-bottom: -30px;
 }
 
 #suggestions {
@@ -79,8 +82,8 @@ button:hover {
     font-family: Arial, sans-serif;
 }
 
-#suggestions div:hover {
-    background-color: #f0f0f0;
+#suggestions div:hover, #suggestions div.selected {
+    background-color: #ddd; 
 }
 
 .top-section, .bottom-section {
@@ -119,7 +122,7 @@ button:hover {
     left: 10px;
     width: 200px;
     height: 100px;
-    background-color: #d8f4f8;
+    background-color: #e1f5f8;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
 }
@@ -247,7 +250,7 @@ button:hover {
 .type-bug, .type-dark, .type-dragon, .type-electric, .type-fairy, .type-fighting,
 .type-fire, .type-flying, .type-ghost, .type-grass, .type-ground, .type-ice,
 .type-normal, .type-poison, .type-psychic, .type-rock, .type-steel, .type-water {
-    color: white;
+    color: #ffffff;
     padding: 5px;
     border-radius: 5px;
     display: inline-block;
